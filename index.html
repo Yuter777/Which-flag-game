@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag Game - Bayroq O'yini</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background particles effect -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Main game container -->
+    <div class="game-container" id="gameContainer">
+      <!-- Start screen -->
+      <div class="start-screen" id="startScreen">
+        <h1 class="game-title">Bayroq O'yini</h1>
+        <button class="enter-button" id="enterButton">
+          <span class="button-text">ENTER ni bosing</span>
+          <span class="button-glow"></span>
+        </button>
+        <p class="instruction">Yoki klaviaturada ENTER tugmasini bosing</p>
+      </div>
+
+      <!-- Loading screen -->
+      <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+          <div class="loader-spinner"></div>
+          <p>Bayroqlar yuklanmoqda...</p>
+        </div>
+      </div>
+
+      <!-- Game screen -->
+      <div class="game-screen" id="gameScreen">
+        <!-- Flag card container -->
+        <div class="flag-card" id="flagCard">
+          <!-- Flag section (top, static) -->
+          <div class="flag-container" id="flagContainer">
+            <img id="flagImage" src="" alt="Flag" class="flag-image" />
+          </div>
+
+          <!-- Bottom section (countdown + country name) -->
+          <div class="game-bottom-section">
+            <!-- Countdown display -->
+            <div class="countdown-container" id="countdownContainer">
+              <div class="countdown-number" id="countdownNumber">3</div>
+            </div>
+
+            <!-- Country name display -->
+            <div class="country-name-container" id="countryNameContainer">
+              <h2 class="country-name" id="countryName"></h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shuffle indicator -->
+        <div class="shuffle-indicator" id="shuffleIndicator">
+          <div class="spinner"></div>
+          <p>Aralashtirilmoqda...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <!-- External libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+
+    <!-- Main game script -->
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "flag-game",
+  "version": "1.0.0",
+  "description": "Modern Flag Game with GSAP animations, sound effects, and Uzbek TTS",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "dev": "npx http-server -p 8000"
+  },
+  "keywords": [
+    "game",
+    "flags",
+    "quiz",
+    "uzbek",
+    "gsap",
+    "animation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
