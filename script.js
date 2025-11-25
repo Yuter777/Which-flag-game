@@ -25,6 +25,7 @@ class FlagGame {
     this.particlesContainer = document.getElementById("particles");
     this.countryNameContainer = document.getElementById("countryNameContainer");
     this.countryName = document.getElementById("countryName");
+    this.infoContainer = document.getElementById("infoContainer");
 
     // Game State
     this.flags = [];
@@ -591,10 +592,11 @@ class FlagGame {
     this.gameScreen.classList.add("active");
 
     // Hide countdown and country name initially
-    this.countdownContainer.style.display = "none";
-    this.countdownNumber.textContent = "3";
+    this.countdownContainer.style.display = "flex";
+    this.countdownNumber.textContent = "1";
     this.countryNameContainer.classList.remove("visible");
     this.countryName.textContent = "";
+    this.infoContainer.style.display = "flex";
 
     // Show shuffle indicator
     this.shuffleIndicator.classList.add("active");
@@ -725,11 +727,12 @@ class FlagGame {
    */
   startCountdown() {
     this.isShuffling = false;
-    let count = 3;
+    let count = 1;
 
     // Show countdown container
-    this.countdownContainer.style.display = "block";
+    this.countdownContainer.style.display = "flex";
     this.countdownNumber.textContent = count;
+    this.countryNameContainer.classList.remove("visible");
 
     // Animate countdown number appearance
     gsap.fromTo(
