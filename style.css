@@ -1,8 +1,3 @@
-/* ============================================
-   Modern Flag Game - Stylesheet
-   Glassmorphism Design with Animations
-   ============================================ */
-
 * {
   margin: 0;
   padding: 0;
@@ -28,12 +23,8 @@ body {
   height: 100vh;
   background: var(--primary-gradient);
   position: relative;
-  cursor: none; /* Hide default cursor for custom cursor */
+  cursor: none;
 }
-
-/* ============================================
-   Background Particles Animation
-   ============================================ */
 
 .particles {
   position: fixed;
@@ -72,10 +63,6 @@ body {
   }
 }
 
-/* ============================================
-   Custom Cursor
-   ============================================ */
-
 .custom-cursor {
   position: fixed;
   width: 20px;
@@ -96,10 +83,6 @@ body {
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
 }
 
-/* ============================================
-   Game Container
-   ============================================ */
-
 .game-container {
   position: relative;
   width: 100%;
@@ -109,10 +92,6 @@ body {
   justify-content: center;
   z-index: 1;
 }
-
-/* ============================================
-   Start Screen
-   ============================================ */
 
 .start-screen {
   text-align: center;
@@ -191,10 +170,6 @@ body {
   margin-top: 1rem;
 }
 
-/* ============================================
-   Loading Screen
-   ============================================ */
-
 .loading-screen {
   position: absolute;
   top: 0;
@@ -240,10 +215,6 @@ body {
   color: var(--text-secondary);
 }
 
-/* ============================================
-   Game Screen
-   ============================================ */
-
 .game-screen {
   display: none;
   width: 100%;
@@ -261,10 +232,6 @@ body {
 .game-screen.active {
   display: flex;
 }
-
-/* ============================================
-   Flag Card (Glassmorphism)
-   ============================================ */
 
 .flag-card {
   background: transparent;
@@ -286,8 +253,6 @@ body {
   gap: 3rem;
   min-height: auto;
 }
-
-/* Remove card pseudo-elements */
 
 .flag-container {
   width: 100%;
@@ -312,8 +277,6 @@ body {
   margin: 0 auto;
 }
 
-/* Liquid glass effect removed from flag-container */
-
 .flag-image {
   max-width: 100%;
   max-height: 100%;
@@ -333,10 +296,6 @@ body {
   opacity: 1;
   transform: scale(1);
 }
-
-/* ============================================
-   Bottom Section (Countdown + Country Name)
-   ============================================ */
 
 .game-bottom-section {
   width: 100%;
@@ -358,10 +317,6 @@ body {
   margin: 0 auto;
 }
 
-/* ============================================
-   Info Container (Countdown + Country Name)
-   ============================================ */
-
 .info-container {
   width: 100%;
   padding: 1.5rem 3rem;
@@ -381,10 +336,6 @@ body {
   position: relative;
   z-index: 2;
 }
-
-/* ============================================
-   Countdown Display
-   ============================================ */
 
 .countdown-container {
   width: 100%;
@@ -414,10 +365,6 @@ body {
     transform: scale(1.15);
   }
 }
-
-/* ============================================
-   Country Name Display
-   ============================================ */
 
 .country-name-container {
   width: 100%;
@@ -452,10 +399,6 @@ body {
   box-shadow: none;
 }
 
-/* ============================================
-   Shuffle Indicator
-   ============================================ */
-
 .shuffle-indicator {
   position: absolute;
   top: 50%;
@@ -487,10 +430,6 @@ body {
   font-weight: 600;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
-
-/* ============================================
-   Responsive Design
-   ============================================ */
 
 @media (max-width: 768px) {
   .flag-card {
@@ -565,10 +504,6 @@ body {
     font-size: clamp(1rem, 3vw, 1.5rem);
   }
 }
-
-/* ============================================
-   Accessibility
-   ============================================ */
 
 @media (prefers-reduced-motion: reduce) {
   *,
